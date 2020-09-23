@@ -1,26 +1,31 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import {
+  BrowseRouter,
+  Redirect,
+  Route,
+  Switch
+} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { initializeGA } from './utils/ga';
+
+import notes from './views/Notes';
+
+initializeGA();
+
+class App extends React.Component{
+  render(){
+    return(
+      <BrowseRouter>
+        <switch>
+          <Route path = {['/notes-app/:folder/:note_id', '/notes-app/:folder', '/notes-app']}
+          component={Notes} 
+          />
+        </switch>
+        <Redirect from='/' to='/notes-app' />;
+      </BrowseRouter>
+    )
+  }
 }
 
 export default App;
