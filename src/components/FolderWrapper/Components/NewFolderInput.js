@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './FolderWrapper.module.scss';
+import styles from './FoldersWrapper.module.scss';
 
 class NewFolderInput extends React.Component {
     validateFolderName = (e) =>{

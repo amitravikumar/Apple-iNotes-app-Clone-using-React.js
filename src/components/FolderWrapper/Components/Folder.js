@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import NotesContext from '../../../utils/context';
-import styles from '../FolderWrapper.module.scss';
+import styles from '../FoldersWrapper.module.scss';
 
 const Folder = ({
     folder,
