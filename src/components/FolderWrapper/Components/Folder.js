@@ -8,7 +8,7 @@ import styles from '../FolderWrapper.module.scss';
 const Folder = ({
     folder,
     selectedFolderFn
-}) =>{
+}) =>(
     <NotesContext.Consumer>
         {
             context => (
@@ -23,4 +23,11 @@ const Folder = ({
             )
         }
     </NotesContext.Consumer>
+)
+
+Folder.propTypes = {
+    folder: propTypes.object.isRequired,
+    selectedFolderFn: propTypes.func.isRequired
 }
+
+export default folder
