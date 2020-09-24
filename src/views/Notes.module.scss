@@ -1,0 +1,27 @@
+.desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../assets/desktop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .appWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 600px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .viewWrapper {
+    display: flex;
+    height: calc(100% - 36px);
+    border: 1px solid #c5c5c5;
+  }
