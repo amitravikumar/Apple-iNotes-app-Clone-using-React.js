@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Notes.module.scss'
 
-import FoldersWrapper from '../components/FolderWrapper/FoldersWrapper'
+import FoldersWrapper from '../components/FoldersWrapper/FoldersWrapper'
 import NotesWrapper from '../components/NotesWrapper/NotesWrapper'
 import Preview from '../components/Preview/Preview'
 import TopBar from '../components/TopBar/TopBar'
