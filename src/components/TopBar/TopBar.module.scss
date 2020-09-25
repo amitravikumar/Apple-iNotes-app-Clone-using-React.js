@@ -1,0 +1,28 @@
+.topbar {
+    height: 34px;
+    background: rgb(240,240,240);
+    background: linear-gradient(180deg, rgba(240,240,240,1) 0%, rgba(233,233,233,1) 35%, rgba(221,221,221,1) 100%);
+    border: 1px solid #c5c5c5;
+    border-bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dotsContainer {
+    width: 200px;
+    padding-left: 8px;
+  }
+  
+  .buttonsContainer {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .searchContainer {
+    width: calc(100% - 400px);
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 8px;
+  }

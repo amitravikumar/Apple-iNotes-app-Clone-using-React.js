@@ -1,0 +1,23 @@
+.dots {
+    display: flex;
+  }
+  
+  .dot {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-right: 7px;
+    border: 1px solid #dedede;
+  
+    &__red {
+      background-color: rgb(255, 69, 58);
+    }
+  
+    &__yellow {
+      background-color: rgb(255, 214, 10);
+    }
+  
+    &__green {
+      background-color: rgb(50, 215, 75);
+    }
+  }

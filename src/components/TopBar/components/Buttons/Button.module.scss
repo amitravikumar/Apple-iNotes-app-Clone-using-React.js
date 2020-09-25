@@ -1,0 +1,31 @@
+.btn {
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    background-color: #fbfbfb;
+    height: 24px;
+    width: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4px;
+  
+    i {
+      font-size: 14px;
+      color: #505050;
+      line-height: 22px;
+    }
+  
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  .btnDisabled {
+    @extend .btn;
+  
+    background-color: #ececec;
+  
+    i {
+      color: #c3c3c3;
+    }
+  }

@@ -1,0 +1,59 @@
+.wrapper {
+    width: 200px;
+    border-right: 1px solid #e8e8e8;
+    background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=626262&density=70&opacity=5);
+    overflow: scroll;
+  }
+  
+  .thumbnail {
+    padding: 8px 16px;
+    border-bottom: 1px solid #e8e8e8;
+    color: #000;
+    display: block;
+  
+    &:hover {
+      color: currentColor;
+      text-decoration: none;
+    }
+  }
+  
+  .thumbnailActive {
+    @extend .thumbnail;
+    background-color: #ffd84b;
+  }
+  
+  .thumbnailHeader {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 0 5px;
+  }
+  
+  .thumbnailHeaderEmpty {
+    @extend .thumbnailHeader;
+    color: #585858;
+    font-weight: 300;
+  }
+  
+  .thumbnailDate {
+    font-size: 11px;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  .thumbnailFolder {
+    display: flex;
+    align-items: center;
+    margin: 3px 0 0;
+  
+    i {
+      margin-right: 4px;
+      font-size: 12px;
+    }
+  
+    span {
+      font-size: 12px;
+      color: #585858;
+      font-weight: 300;
+      text-transform: capitalize;
+    }
+  }
