@@ -9,7 +9,7 @@ import {
 
 import { initializeGA } from './utils/ga';
 
-import notes from './views/Notes';
+import Notes from './views/Notes';
 
 initializeGA();
 
